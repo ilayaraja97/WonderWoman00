@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <!--styles-->
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/stylesheets/dashboard.css" rel="stylesheet">
+    <!--styles end-->
+</head>
+<body class="container-fluid">
+<%- include partial/navbar.ejs %>
+<div class="card-group">
+    <%- include partial/card.ejs %>
+    <%- include partial/card.ejs %>
+    <%- include partial/card.ejs %>
+</div>
+<%- include partial/footer.ejs %>
+<!--scripts-->
+<script src="../node_modules/firebase/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyC-soRWOefW1lSC-eRtJ0ulG3f7auVN3vE",
+        authDomain: "digital-classroom-9b87c.firebaseapp.com",
+        databaseURL: "https://digital-classroom-9b87c.firebaseio.com",
+        projectId: "digital-classroom-9b87c",
+        storageBucket: "digital-classroom-9b87c.appspot.com",
+        messagingSenderId: "380199462796"
+    };
+    firebase.initializeApp(config);
+</script>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/angular/angular.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/angularfire/dist/angularfire.min.js"></script>
+<script src="../public/javascripts/dashboard.js"></script>
+<script src="../public/javascripts/navbar.js"></script>
+</body>
+</html>

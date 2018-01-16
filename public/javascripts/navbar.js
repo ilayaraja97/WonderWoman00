@@ -1,7 +1,8 @@
-var app = angular.module("navbar", [firebase]);
-app.controller("navBarCtrl", function ($scope) {
-    var userID="2015kucp1030";
-    var courseRef = firebase.database().ref("user/"+userID+"/courses");
+var app = angular.module("navbar", ["firebase"]);
+app.controller("navBarCtrl", function ($firebaseArray) {
     var course = this;
+    var userID = document.querySelector("#navid").innerHTML;
+    console.log(userID);
+    var courseRef = firebase.database().ref("user/" + userID + "/courses");
     course.courses = $firebaseArray(courseRef);
 });

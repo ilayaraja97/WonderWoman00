@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-app.use('/dash', dashboard);
+app.use('/dashboard', dashboard);
 app.use("/node_modules", express.static('node_modules'));
 app.use("/public", express.static('public'));
 
