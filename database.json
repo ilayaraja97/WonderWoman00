@@ -1,0 +1,96 @@
+{
+  "student": {
+    "2015kucp1030": {
+      "details": {
+        "name": "Raja"
+      },
+      "courses": [
+        {
+          "name": "Maths",
+          "progress": "30"
+        },
+        {
+          "name": "Physics",
+          "progress": "30"
+        },
+        {
+          "name": "Biology",
+          "progress": "30"
+        },
+        {
+          "name": "SST",
+          "progress": "30"
+        }
+      ],
+      "uploads": []
+    }
+  },
+  "teacher": {
+    "tecp1001": {
+      "details": {
+        "name": "Raja Sir"
+      },
+      "courses": [
+        {
+          "name": "Maths",
+          "students": [
+            "2015KUCP1030"
+          ]
+        },
+        {
+          "name": "Physics",
+          "students": [
+            "2015KUCP1030"
+          ]
+        },
+        {
+          "name": "Biology",
+          "students": [
+            "2015KUCP1030"
+          ]
+        },
+        {
+          "name": "SST",
+          "students": [
+            "2015KUCP1030"
+          ]
+        }
+      ],
+      "uploads": []
+    }
+  },
+  "admin": {
+    "admin": {
+      "details": {
+        "name": "Raja Sir Sir"
+      },
+      "courses": [
+        {
+          "name": "Maths",
+          "students": [
+            "2015KUCP1030"
+          ]
+        },
+        {
+          "name": "Physics",
+          "students": [
+            "2015KUCP1030"
+          ]
+        },
+        {
+          "name": "Biology",
+          "students": [
+            "2015KUCP1030"
+          ]
+        },
+        {
+          "name": "SST",
+          "students": [
+            "2015KUCP1030"
+          ]
+        }
+      ],
+      "uploads": []
+    }
+  }
+}
